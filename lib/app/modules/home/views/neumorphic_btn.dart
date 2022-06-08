@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:getx/app/modules/home/Utility/utility.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -15,7 +16,7 @@ class NeumorphicWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 8.0),
+      padding: EdgeInsets.only(right: 8.0.w),
       child: NeumorphicButton(
         onPressed: () {},
         style: mystyle,
@@ -23,7 +24,7 @@ class NeumorphicWidget extends StatelessWidget {
           children: [
             sideBarIcon,
             SizedBox(
-              width: 15.0,
+              width: 10.0.w,
             ),
             Text(
               sideBarTxt,

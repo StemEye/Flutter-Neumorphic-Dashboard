@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:getx/app/modules/dashboard/bindings/dashboard_binding.dart';
+import 'package:getx/app/modules/dashboard/views/dashboard_view.dart';
 import 'package:getx/app/modules/home/bindings/home_binding.dart';
 import 'package:getx/app/modules/home/views/home_view.dart';
 
@@ -15,6 +17,11 @@ class AppPages {
       name: _Paths.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.DASHBOARD,
+      page: () => DashboardView(),
+      binding: DashboardBinding(),
     ),
   ];
 }

@@ -17,7 +17,9 @@ class NeumorphicActivity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 4.0, right: 16.0),
+      padding: EdgeInsets.only(
+          left: MediaQuery.of(context).size.height * 0.03 / 8,
+          right: MediaQuery.of(context).size.height * 0.012),
       child: Neumorphic(
         style: myminusdeptStyle,
         child: SizedBox(

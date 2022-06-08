@@ -1,7 +1,7 @@
-# getx
+# getx # neumorphism ui
 
 A new Flutter project.
-
+![Screenshot](resources/Capture.PNG)
 ## Getting Started
 
 This project is a starting point for a Flutter application.

@@ -12,10 +12,10 @@ class MiddleColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: .0),
+      padding: const EdgeInsets.symmetric(horizontal: 13.0, vertical: .0),
       child: Container(
-        width: 770,
-        height: 657,
+        width: MediaQuery.of(context).size.width * 0.54,
+        height: double.infinity,
         child: Scaffold(
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,17 +24,22 @@ class MiddleColumn extends StatelessWidget {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 30.0, left: 30.0),
+                      padding: EdgeInsets.only(
+                        top: MediaQuery.of(context).size.height * 0.04,
+                        left: MediaQuery.of(context).size.width * 0.03,
+                      ),
                       child: Neumorphic(
                         child: Padding(
-                          padding: const EdgeInsets.all(15.0),
+                          padding: EdgeInsets.all(
+                            MediaQuery.of(context).size.width * 0.01,
+                          ),
                           child: Text('DASHBOARD'),
                         ),
                         style: mystyle,
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 30.0, left: 30.0),
+                      padding: const EdgeInsets.only(top: 30.0, left: 15.0),
                       child: Neumorphic(
                         style: NeumorphicStyle(
                           lightSource: LightSource.topLeft,
@@ -46,8 +51,8 @@ class MiddleColumn extends StatelessWidget {
                               BorderRadius.circular(25)),
                         ),
                         child: SizedBox(
-                          width: 580,
-                          height: 50.0,
+                          width: MediaQuery.of(context).size.width * 0.40,
+                          height: MediaQuery.of(context).size.height * 0.07,
                           child: TextFormField(
                             decoration: InputDecoration(
                                 suffixIcon: Padding(
@@ -110,7 +115,7 @@ class MiddleColumn extends StatelessWidget {
                     ),
                   ],
                   options: CarouselOptions(
-                    height: 180.0,
+                    height: MediaQuery.of(context).size.height / 3.9,
                     enlargeCenterPage: true,
                     autoPlay: true,
                     aspectRatio: 16 / 9,

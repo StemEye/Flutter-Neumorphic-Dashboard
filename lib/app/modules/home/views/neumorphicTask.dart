@@ -67,7 +67,7 @@ class NeumorphicTask extends StatelessWidget {
                       taskDetails,
                       textAlign: TextAlign.left,
                       style: TextStyle(
-                        fontSize: 13.0,
+                        fontSize: 14.0,
                         fontWeight: FontWeight.w400,
                         color: Color.fromARGB(207, 100, 91, 91),
                       ),

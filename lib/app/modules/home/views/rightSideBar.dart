@@ -6,6 +6,7 @@ import 'package:getx/app/modules/home/views/activity.dart';
 import 'package:getx/app/modules/home/views/neumorphicTask.dart';
 import 'package:getx/app/modules/home/views/teamStatus.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RightSideBar extends StatelessWidget {
   const RightSideBar({Key? key}) : super(key: key);
@@ -15,8 +16,8 @@ class RightSideBar extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 300,
-          height: 657,
+          width: MediaQuery.of(context).size.width * 0.22,
+          height: MediaQuery.of(context).size.height,
           child: Padding(
             padding: const EdgeInsets.only(top: 30.0, left: 10.0),
             child: Container(
@@ -76,7 +77,7 @@ class RightSideBar extends StatelessWidget {
                       ),
                       child: Container(
                         height: 255.0,
-                        width: 250,
+                        width: 239.w,
                         child: Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: SfCalendar(
@@ -108,7 +109,7 @@ class RightSideBar extends StatelessWidget {
                           Text(
                             "Today's Activity",
                             style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 15.0,
                                 fontWeight: FontWeight.w700,
                                 color: txtColor,
                                 decoration: TextDecoration.none),
